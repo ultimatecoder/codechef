@@ -115,8 +115,8 @@ def verify(
     if total_legs == counted_legs:
         return True
     if total_legs >= counted_legs:
-        if verify(number_of_cats - 1, number_of_dogs, counted_legs):
+        if verify(number_of_cats - 1, number_of_dogs - 1, counted_legs - 4):
             return True
-        elif verify(number_of_cats - 2, number_of_dogs, counted_legs):
+        elif verify(number_of_cats - 2, number_of_dogs - 1, counted_legs - 4):
             return True
     return False
