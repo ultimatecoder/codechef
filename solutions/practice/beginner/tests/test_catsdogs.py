@@ -17,6 +17,7 @@ def test_verify():
         (10, 8, 33, False),
         (10, 8, 36, True),
         (25, 1, 4, False),
+        (0, 2, 4, False)
     )
     for number_of_cats, number_of_dogs, counted_legs, expected_result in (
         sample_combinations_and_expected_answers
